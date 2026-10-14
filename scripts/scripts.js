@@ -578,3 +578,7 @@ if (!window.hlx?.suppressLoadPage) {
     applyTheme(e.detail?.theme);
   });
 }
+
+if (window.location.href.includes('.aem.page')) {
+   import('../tools/sidekick/aem-sites-optimizer-preflight.js');
+}
